@@ -1417,3 +1417,754 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 3957)
 
 
+Started GET "/users/new" for ::1 at 2020-12-15 13:46:19 +0530
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 806)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 8354)
+
+
+Started POST "/users" for ::1 at 2020-12-15 13:46:26 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"zdm4Xxyq61dHKiIck1JXQpUgEe4GE7dzfGm8JSsCoVL/pKY/k50Aq96kd07/hO6RTXXctKPESuXotXzOZD7NnA==", "username"=>"Enter your username", "email"=>"email@example.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms | Allocations: 1134)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:7:in `create'
+Started GET "/users/new" for ::1 at 2020-12-15 13:46:58 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5388)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 13:47:11 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 629)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5304)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 13:47:27 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 298)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4071)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 13:47:29 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4056)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 13:47:35 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 4061)
+
+
+Started POST "/users" for ::1 at 2020-12-15 13:48:32 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"lB8Umm9bp/eekOAo6M2A7r3s7aF0piNIsocvAsoR33SmYgr64GxMCwcetXqEGzk9Zbkg+9Fx3t4mW+/phS2zug==", "username"=>"leo ", "email"=>"leo@gmail.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "leo "], ["email", "leo@gmail.com"], ["password", "titanic"], ["created_at", "2020-12-15 08:18:32.516175"], ["updated_at", "2020-12-15 08:18:32.516175"]]
+  ↳ app/controllers/users_controller.rb:9:in `create'
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:9:in `create'
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 13ms (ActiveRecord: 4.8ms | Allocations: 9039)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 13:48:32 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 299)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 4218)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:20:31 +0530
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1688)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 3557)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    18:   <%# <%= submit_tag 'Submit' %> %>
+    19:   <%# <%end<] %>
+    20: 
+    21: <%= form_for @user, url: {action: "create"} do |f| %>
+    22:   <%= f.label :username, 'Enter your username' %>
+    23:   <%= f.text_field :username, '@username: ' %>
+    24: <% end %>
+  
+app/views/users/new.html.erb:21
+Started GET "/users/new" for ::1 at 2020-12-15 14:23:40 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2416)
+
+
+  
+NameError (uninitialized constant UsersController::Users):
+  
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for ::1 at 2020-12-15 14:23:54 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2537)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 7185)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for "@username: ":String):
+    20: 
+    21: <%= form_for @user, url: {action: "create"} do |f| %>
+    22:   <%= f.label :username, 'Enter your username' %>
+    23:   <%= f.text_field :username, '@username: ' %>
+    24: <% end %>
+  
+app/views/users/new.html.erb:23
+app/views/users/new.html.erb:21
+Started GET "/users/new" for ::1 at 2020-12-15 14:24:24 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 962)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 7531)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:27:01 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 9450)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 10609)
+
+
+  
+ActionView::Template::Error (undefined method `first_name' for #<User:0x00007fcc9894d178>):
+    19:   <%# <%end<] %>
+    20: 
+    21: <%= form_for :user do |f| %>
+    22:   First name: <%= f.text_field :first_name %><br />
+    23:   Last name : <%= f.text_field :last_name %><br />
+    24:   Biography : <%= f.text_area :biography %><br />
+    25:   Admin?    : <%= f.check_box :admin %><br />
+  
+app/views/users/new.html.erb:22
+app/views/users/new.html.erb:21
+Started GET "/users/new" for ::1 at 2020-12-15 14:27:47 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 12.2ms | Allocations: 8409)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 13013)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:28:03 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 5579)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:28:18 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2547)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3691)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for "Enter your username here":String):
+    19:   <%# <%end<] %>
+    20: 
+    21: <%= form_for :user do |f| %>
+    22:   First name: <%= f.text_field :username, 'Enter your username here' %><br />
+    23:   Last name : <%= f.email_field :email %><br />
+    24:   Biography : <%= f.password_field :password %><br />
+    25:   <%= f.submit %>
+  
+app/views/users/new.html.erb:22
+app/views/users/new.html.erb:21
+Started GET "/users/new" for ::1 at 2020-12-15 14:28:32 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 891)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5586)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:31:43 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1179)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5856)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:32:56 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1312)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2475)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
+  <%# <label for="username">Username:</label> %>
+  <%# <input type="text" id="username" name="user[username]"> %>
+  <%# <label for="email">Email:</label> %>
+  <%# <input type="email" id="email" name="user[email]"> %>
+  <%# <label for="password">Password</label> %>
+  <%# <input id="password" type="password" name="user[password]"> %>
+<%#   <input type="Submit" value="new"> %>
+<%# </form> %>
+
+<%= #form_tag "/users", method: "post" do %>
+  <%= #label_tag 'username', 'Username: '%>
+  <%= #text_field_tag 'username', 'Enter your username'%>
+  <%= #label_tag 'email', 'Email: ' %>
+  <%= #email_field_tag 'email', 'email@example.com' %>
+  <%= #label_tag 'password'%>
+  <%= #password_field_tag 'password'%>
+  <%= #submit_tag 'Submit' %>
+<%#end%>
+
+<%= form_for :user do |f| %>
+  First name: <%= f.text_field :username%><br />
+  Last name : <%= f.email_field :email %><br />
+  Biography : <%= f.password_field :password %><br />
+  <%= f.submit %>
+<% end %>
+
+
+):
+1:    <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
+2:      <%# <label for="username">Username:</label> %>
+3:      <%# <input type="text" id="username" name="user[username]"> %>
+4:      <%# <label for="email">Email:</label> %>
+5:      <%# <input type="email" id="email" name="user[email]"> %>
+6:      <%# <label for="password">Password</label> %>
+7:      <%# <input id="password" type="password" name="user[password]"> %>
+8:    <%#   <input type="Submit" value="new"> %>
+9:    <%# </form> %>
+10:    
+11:    <%= #form_tag "/users", method: "post" do %>
+12:      <%= #label_tag 'username', 'Username: '%>
+13:      <%= #text_field_tag 'username', 'Enter your username'%>
+14:      <%= #label_tag 'email', 'Email: ' %>
+15:      <%= #email_field_tag 'email', 'email@example.com' %>
+16:      <%= #label_tag 'password'%>
+17:      <%= #password_field_tag 'password'%>
+18:      <%= #submit_tag 'Submit' %>
+19:    <%#end%>
+20:    
+21:    <%= form_for :user do |f| %>
+22:      First name: <%= f.text_field :username%><br />
+23:      Last name : <%= f.email_field :email %><br />
+24:      Biography : <%= f.password_field :password %><br />
+25:      <%= f.submit %>
+26:    <% end %>
+  
+app/views/users/new.html.erb:12: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:16: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:17: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:18: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:24: syntax error, unexpected ':', expecting `end'
+app/views/users/new.html.erb:24: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:29: unterminated regexp meets end of file
+app/views/users/new.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:16: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:17: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:18: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:24: syntax error, unexpected ':', expecting `end'
+app/views/users/new.html.erb:24: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:29: unterminated regexp meets end of file
+app/views/users/new.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:16: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:17: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:18: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:24: syntax error, unexpected ':', expecting `end'
+app/views/users/new.html.erb:24: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:29: unterminated regexp meets end of file
+app/views/users/new.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:16: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:17: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:18: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:24: syntax error, unexpected ':', expecting `end'
+app/views/users/new.html.erb:24: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:29: unterminated regexp meets end of file
+app/views/users/new.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:16: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:17: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:18: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:24: syntax error, unexpected ':', expecting `end'
+app/views/users/new.html.erb:24: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:29: unterminated regexp meets end of file
+app/views/users/new.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:12: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:13: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:14: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:15: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:16: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:17: syntax error, unexpected local variable or method, expecting `end'
+app/views/users/new.html.erb:18: syntax error, unexpected constant, expecting `end'
+app/views/users/new.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:24: syntax error, unexpected ':', expecting `end'
+app/views/users/new.html.erb:24: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:29: unterminated regexp meets end of file
+app/views/users/new.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/new" for ::1 at 2020-12-15 14:35:12 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 815)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5527)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:35:26 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 824)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5501)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:35:52 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 824)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 5510)
+
+
+Started GET "/users/create" for ::1 at 2020-12-15 14:36:01 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/users/create"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2020-12-15 14:36:04 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 452)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 4237)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:37:32 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 827)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 5516)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:37:33 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 454)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 4240)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:37:42 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 825)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5521)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:38:22 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5526)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:38:40 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 844)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 5545)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:39:13 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 842)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5526)
+
+
+Started POST "/users/new" for ::1 at 2020-12-15 14:40:08 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/new" for ::1 at 2020-12-15 14:42:36 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/rails/info/routes?path=%20q" for ::1 at 2020-12-15 14:42:40 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>" q"}
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1552)
+
+
+Started GET "/rails/info/routes?path=%20q%20%20%20%20%20%20%20%20q" for ::1 at 2020-12-15 14:42:41 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>" q        q"}
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 768)
+
+
+Started POST "/users/new" for ::1 at 2020-12-15 14:42:55 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users/new" for ::1 at 2020-12-15 14:43:46 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2020-12-15 14:43:55 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1122)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 6.4ms | ActiveRecord: 0.8ms | Allocations: 9576)
+
+
+Started GET "/user/new" for ::1 at 2020-12-15 14:47:13 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/user/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2020-12-15 14:47:19 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 747)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 11.6ms | ActiveRecord: 0.9ms | Allocations: 8412)
+
+
+Started POST "/users/new" for ::1 at 2020-12-15 14:47:29 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2020-12-15 14:47:43 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4252)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:47:57 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 4250)
+
+
+Started GET "/users/new" for ::1 at 2020-12-15 14:51:44 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1316)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2473)
+
+
+  
+ActionView::Template::Error (unknown keyword: :method):
+    18:   <%# submit_tag 'Submit' %>
+    19: <%#end%>
+    20: 
+    21: <%= form_for :user, url_for(action: 'create'), method: "post" do |f| %>
+    22:   Username: <%= f.text_field :username, placeholder: 'Enter your username here'%>
+    23:   Email : <%= f.email_field :email, placeholder: 'example@example.com'%>
+    24:   Password : <%= f.password_field :password %>
+  
+app/views/users/new.html.erb:21
