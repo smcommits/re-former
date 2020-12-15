@@ -18,10 +18,29 @@
   <%# submit_tag 'Submit' %>
 <%#end%>
 
-<%= form_for @user do |f| %>
-  Username: <%= f.text_field :username, placeholder: 'Enter your username here'%>
-  Email : <%= f.email_field :email, placeholder: 'example@example.com'%>
-  Password : <%= f.password_field :password %>
-  <%= f.submit %>
+<%= form_for @user do |f| %> 
+
+  Username: <%= f.text_field :username, placeholder: 'Enter your username here'%><br>
+  <%if @user.errors[:username].any?%>
+    <%@user.errors[:username].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Username " + error%></li>
+    <%end%>
+  <%end%>
+
+  Email : <%= f.email_field :email, placeholder: 'example@example.com'%><br>
+  <%if @user.errors[:email].any?%>
+    <%@user.errors[:email].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Email " + error%></li>
+    <%end%>
+  <%end%>
+
+  Password : <%= f.password_field :password %><br>
+  <%if @user.errors[:password].any?%>
+    <%@user.errors[:password].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Password " + error%></li>
+    <%end%>
+  <%end%>
+  
+  <%= f.submit %> 
 <% end %>
 
