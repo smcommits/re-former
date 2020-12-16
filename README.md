@@ -41,7 +41,7 @@ Alternatively, you can click [this link](https://github.com/smcommits/re-former/
 Now navigate to the repo
 
 ```
-cd micro_reddit
+cd re-former
 ```
 
 ### Step 3: Installing Dependencies

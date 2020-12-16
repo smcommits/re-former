@@ -4496,3 +4496,346 @@ Processing by UsersController#edit as HTML
 Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 6129)
 
 
+Started GET "/users/new" for ::1 at 2020-12-16 13:17:14 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2953)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 14074)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:17:28 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1391)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 6095)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:17:38 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 5730)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:17:53 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1043)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 5734)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:18:09 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1088)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 5791)
+
+
+Started POST "/users" for ::1 at 2020-12-16 13:18:23 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"IJtORHx1exGj1oqIa60VNUU1xZiNus4fX9fmEuANsmkyQVPUBSWora6zYb12j5nkjgljCS4trrG55QFEVIjkMg==", "username"=>"nananan", "email"=>"nanananana@gmail.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 626)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:38:in `user_params'
+app/controllers/users_controller.rb:12:in `create'
+Started POST "/users" for ::1 at 2020-12-16 13:19:18 +0530
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"IJtORHx1exGj1oqIa60VNUU1xZiNus4fX9fmEuANsmkyQVPUBSWora6zYb12j5nkjgljCS4trrG55QFEVIjkMg==", "username"=>"nananan", "email"=>"nanananana@gmail.com", "password"=>"[FILTERED]", "commit"=>"Submit"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "nananan"], ["email", "nanananana@gmail.com"], ["password", "asdfasdd"], ["created_at", "2020-12-16 07:49:18.837902"], ["updated_at", "2020-12-16 07:49:18.837902"]]
+  ↳ app/controllers/users_controller.rb:14:in `create'
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:14:in `create'
+Redirected to http://localhost:3000/users/15
+Completed 302 Found in 13ms (ActiveRecord: 4.8ms | Allocations: 8882)
+
+
+Started GET "/users/15" for ::1 at 2020-12-16 13:19:18 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 117)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 5175)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:20:02 +0530
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1486)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms | Allocations: 6363)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
+  <%#<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <%# <label for="username">Username:</label> %>
+  <%# <input type="text" id="username" name="user[username]"> %>
+  <%# <label for="email">Email:</label> %>
+  <%# <input type="email" id="email" name="user[email]"> %>
+  <%# <label for="password">Password</label> %>
+  <%# <input id="password" type="password" name="user[password]"> %>
+<%#   <input type="Submit" value="new"> %>
+<%# </form> %>
+
+<%= form_tag "/users", method: "post" do %>
+  <%= label_tag 'username', 'Username: '%>
+  <%= text_field_tag 'username', 'Enter your username'%>
+  <%= label_tag 'email', 'Email: ' %>
+  <%= email_field_tag 'email', 'email@example.com' %>
+  <%= label_tag 'password'%>
+  <%= password_field_tag 'password'%>
+  <%= submit_tag 'Submit' %>
+<%end%>
+
+<%= form_for @user do |f| <] 
+
+  Username: <%= f.text_field :username, placeholder: 'Enter your username here'%><br>
+  <%if @user.errors[:username].any?%>
+    <%@user.errors[:username].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Username " + error%></li>
+    <%end%>
+  <%end%>
+
+  Email : <%= f.email_field :email, placeholder: 'example@example.com'%><br>
+  <%if @user.errors[:email].any?%>
+    <%@user.errors[:email].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Email " + error%></li>
+    <%end%>
+  <%end%>
+
+  Password : <%= f.password_field :password %><br>
+  <%if @user.errors[:password].any?%>
+    <%@user.errors[:password].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Password " + error%></li>
+    <%end%>
+  <%end%>
+  
+  <%= f.submit %> 
+<% end <]
+
+
+):
+1:    <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
+2:      <%#<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+3:      <%# <label for="username">Username:</label> %>
+4:      <%# <input type="text" id="username" name="user[username]"> %>
+5:      <%# <label for="email">Email:</label> %>
+6:      <%# <input type="email" id="email" name="user[email]"> %>
+7:      <%# <label for="password">Password</label> %>
+8:      <%# <input id="password" type="password" name="user[password]"> %>
+9:    <%#   <input type="Submit" value="new"> %>
+10:    <%# </form> %>
+11:    
+12:    <%= form_tag "/users", method: "post" do %>
+13:      <%= label_tag 'username', 'Username: '%>
+14:      <%= text_field_tag 'username', 'Enter your username'%>
+15:      <%= label_tag 'email', 'Email: ' %>
+16:      <%= email_field_tag 'email', 'email@example.com' %>
+17:      <%= label_tag 'password'%>
+18:      <%= password_field_tag 'password'%>
+19:      <%= submit_tag 'Submit' %>
+20:    <%end%>
+21:    
+22:    <%= form_for @user do |f| <] 
+23:    
+24:      Username: <%= f.text_field :username, placeholder: 'Enter your username here'%><br>
+25:      <%if @user.errors[:username].any?%>
+26:        <%@user.errors[:username].each do |error| %>
+27:            <li style="color: #e74c3c; padding: .5em 0;"><%="Username " + error%></li>
+28:        <%end%>
+29:      <%end%>
+30:    
+31:      Email : <%= f.email_field :email, placeholder: 'example@example.com'%><br>
+32:      <%if @user.errors[:email].any?%>
+33:        <%@user.errors[:email].each do |error| %>
+34:            <li style="color: #e74c3c; padding: .5em 0;"><%="Email " + error%></li>
+35:        <%end%>
+36:      <%end%>
+37:    
+38:      Password : <%= f.password_field :password %><br>
+39:      <%if @user.errors[:password].any?%>
+40:        <%@user.errors[:password].each do |error| %>
+41:            <li style="color: #e74c3c; padding: .5em 0;"><%="Password " + error%></li>
+42:        <%end%>
+43:      <%end%>
+44:      
+45:      <%= f.submit %> 
+46:    <% end <]
+  
+app/views/users/new.html.erb:22: syntax error, unexpected '<'
+app/views/users/new.html.erb:50: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:22: syntax error, unexpected '<'
+app/views/users/new.html.erb:50: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:22: syntax error, unexpected '<'
+app/views/users/new.html.erb:50: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:22: syntax error, unexpected '<'
+app/views/users/new.html.erb:50: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:22: syntax error, unexpected '<'
+app/views/users/new.html.erb:50: syntax error, unexpected `end', expecting ')'
+app/views/users/new.html.erb:22: syntax error, unexpected '<'
+app/views/users/new.html.erb:50: syntax error, unexpected `end', expecting ')'
+Started GET "/users/new" for ::1 at 2020-12-16 13:20:13 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1545)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2711)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
+  <%#<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <%# <label for="username">Username:</label> %>
+  <%# <input type="text" id="username" name="user[username]"> %>
+  <%# <label for="email">Email:</label> %>
+  <%# <input type="email" id="email" name="user[email]"> %>
+  <%# <label for="password">Password</label> %>
+  <%# <input id="password" type="password" name="user[password]"> %>
+<%#   <input type="Submit" value="new"> %>
+<%# </form> %>
+
+<%= form_tag "/users", method: "post" do %>
+  <%= label_tag 'username', 'Username: '%>
+  <%= text_field_tag 'username', 'Enter your username'%>
+  <%= label_tag 'email', 'Email: ' %>
+  <%= email_field_tag 'email', 'email@example.com' %>
+  <%= label_tag 'password'%>
+  <%= password_field_tag 'password'%>
+  <%= submit_tag 'Submit' %>
+<%end%>
+
+<%= form_for @user do |f| %>
+  Username: <%= f.text_field :username, placeholder: 'Enter your username here'%><br>
+  <%if @user.errors[:username].any?%>
+    <%@user.errors[:username].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Username " + error%></li>
+    <%end%>
+  <%end%>
+
+  Email : <%= f.email_field :email, placeholder: 'example@example.com'%><br>
+  <%if @user.errors[:email].any?%>
+    <%@user.errors[:email].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Email " + error%></li>
+    <%end%>
+  <%end%>
+
+  Password : <%= f.password_field :password %><br>
+  <%if @user.errors[:password].any?%>
+    <%@user.errors[:password].each do |error| %>
+        <li style="color: #e74c3c; padding: .5em 0;"><%="Password " + error%></li>
+    <%end%>
+  <%end%>
+  
+  <%= f.submit %> 
+<% end <]
+
+
+):
+1:    <%# <form action="/users" method="post" accept-charset="UTF-8"> %>
+2:      <%#<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+3:      <%# <label for="username">Username:</label> %>
+4:      <%# <input type="text" id="username" name="user[username]"> %>
+5:      <%# <label for="email">Email:</label> %>
+6:      <%# <input type="email" id="email" name="user[email]"> %>
+7:      <%# <label for="password">Password</label> %>
+8:      <%# <input id="password" type="password" name="user[password]"> %>
+9:    <%#   <input type="Submit" value="new"> %>
+10:    <%# </form> %>
+11:    
+12:    <%= form_tag "/users", method: "post" do %>
+13:      <%= label_tag 'username', 'Username: '%>
+14:      <%= text_field_tag 'username', 'Enter your username'%>
+15:      <%= label_tag 'email', 'Email: ' %>
+16:      <%= email_field_tag 'email', 'email@example.com' %>
+17:      <%= label_tag 'password'%>
+18:      <%= password_field_tag 'password'%>
+19:      <%= submit_tag 'Submit' %>
+20:    <%end%>
+21:    
+22:    <%= form_for @user do |f| %>
+23:      Username: <%= f.text_field :username, placeholder: 'Enter your username here'%><br>
+24:      <%if @user.errors[:username].any?%>
+25:        <%@user.errors[:username].each do |error| %>
+26:            <li style="color: #e74c3c; padding: .5em 0;"><%="Username " + error%></li>
+27:        <%end%>
+28:      <%end%>
+29:    
+30:      Email : <%= f.email_field :email, placeholder: 'example@example.com'%><br>
+31:      <%if @user.errors[:email].any?%>
+32:        <%@user.errors[:email].each do |error| %>
+33:            <li style="color: #e74c3c; padding: .5em 0;"><%="Email " + error%></li>
+34:        <%end%>
+35:      <%end%>
+36:    
+37:      Password : <%= f.password_field :password %><br>
+38:      <%if @user.errors[:password].any?%>
+39:        <%@user.errors[:password].each do |error| %>
+40:            <li style="color: #e74c3c; padding: .5em 0;"><%="Password " + error%></li>
+41:        <%end%>
+42:      <%end%>
+43:      
+44:      <%= f.submit %> 
+45:    <% end <]
+  
+app/views/users/new.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/new.html.erb:49: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/new" for ::1 at 2020-12-16 13:20:29 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1513)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 6218)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:23:48 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5784)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:24:23 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 5804)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:24:46 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1386)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 6068)
+
+
+Started GET "/users/new" for ::1 at 2020-12-16 13:24:52 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1095)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 5773)
+
+
