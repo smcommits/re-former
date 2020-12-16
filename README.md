@@ -86,7 +86,7 @@ This project is designed using the web development framework **Ruby On Rails**
 👤 **Anas Siddiqui**
 
 - GitHub: [Anas Siddiqui](https://github.com/smcommits)
-- LinkedIn: [Anas Siddiqui]( www.linkedin.com/in/sm-anas)
+- LinkedIn: [Anas Siddiqui](https://linkedin.com/in/sm-anas)
 
 
 ## 🤝Contributing
